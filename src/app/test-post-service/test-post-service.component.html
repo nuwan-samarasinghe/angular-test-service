@@ -1,0 +1,24 @@
+<div>
+  <form #ngForm="ngForm" (submit)="onSubmit(ngForm.value)">
+    <label> Book id :
+      <input type="text" name="id" ngModel>
+    </label><br>
+    <label> Author id :
+      <input type="text" name="authorId" ngModel>
+    </label><br>
+    <label> Title :
+      <input type="text" name="title" ngModel>
+    </label><br>
+    <label> Subject :
+      <input type="text" name="subject" ngModel>
+    </label><br>
+    <label hidden> type :
+      <input type="text" name="type" hidden value="null" disabled ngModel>
+    </label><br>
+    <label> date :
+      <input type="date" name="date" ngModel>
+    </label><br>
+    <button type="submit"> Submit</button>
+  </form>
+</div>
+
